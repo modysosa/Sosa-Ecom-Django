@@ -15,7 +15,7 @@ environ.Env.read_env()
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=env('DATABASE_URL')
+        default=env('default')
     )
 }
 
