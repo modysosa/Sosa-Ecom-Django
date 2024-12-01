@@ -13,17 +13,12 @@ load_dotenv()
 env = environ.Env()
 environ.Env.read_env()
 
-# DATABASES = {
-#     'default': dj_database_url.config(
-#         default=env('DATABASE_URL')
-#     )
-# }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config(
+        default=env('default')
+    )
 }
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
@@ -33,8 +28,8 @@ SECRET_KEY = 'django-insecure-(_@ja+(_-9hcj7icy%!sc5w^nh5-d26e^$^i2h#3$w_l4*st8l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-CSRF_TRUSTED_ORIGINS = []
+ALLOWED_HOSTS = ['sosa-ecom-django-production.up.railway.app', 'https://sosa-ecom-django-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://sosa-ecom-django-production.up.railway.app']
 
 # Application definition
 
