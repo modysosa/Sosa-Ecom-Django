@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-(_@ja+(_-9hcj7icy%!sc5w^nh5-d26e^$^i2h#3$w_l4*st8l
 DEBUG = True
 
 ALLOWED_HOSTS = ['sosa-ecom-django-production.up.railway.app', 'https://sosa-ecom-django-production.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['sosa-ecom-django-production.up.railway.app', 'https://sosa-ecom-django-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://sosa-ecom-django-production.up.railway.app']
 
 # Application definition
 
